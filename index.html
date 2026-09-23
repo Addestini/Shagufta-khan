@@ -16,14 +16,14 @@
 
   <style>
     :root{
-      --teal:#3730a3;
-      --teal2:#2d27a0;
-      --teal3:#221e8a;
-      --coral:#f59e0b;
-      --coral2:#d97706;
-      --cream:#f8f8ff;
-      --cream2:#eef0ff;
-      --cream3:#dde0ff;
+      --teal:#1e3a5f;
+      --teal2:#162d4a;
+      --teal3:#0d1f35;
+      --coral:#f4622a;
+      --coral2:#d94e1f;
+      --cream:#fdf8f5;
+      --cream2:#fef0e8;
+      --cream3:#fddcc8;
       --text:#1a1a1a;
       --text2:#444444;
       --text3:#888888;
@@ -34,7 +34,7 @@
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
 
     /* MODALS */
-    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(15,76,76,0.92);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px);}
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(30,58,95,0.92);z-index:9999;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px);}
     .modal-overlay.active{display:flex;}
     .privacy-box{background:var(--white);border-radius:20px;padding:32px;max-width:500px;width:100%;position:relative;max-height:85vh;overflow-y:auto;}
     .modal-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--text3);font-size:24px;cursor:pointer;}
@@ -45,7 +45,7 @@
     .privacy-footer{margin-top:14px;font-size:11px;color:var(--text3);}
 
     /* FORM */
-    .form-box{background:var(--white);border-radius:24px;padding:36px 28px;max-width:440px;width:100%;position:relative;box-shadow:0 40px 100px rgba(15,76,76,0.18);}
+    .form-box{background:var(--white);border-radius:24px;padding:36px 28px;max-width:440px;width:100%;position:relative;box-shadow:0 40px 100px rgba(30,58,95,0.18);}
     .form-box-title{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--teal);text-align:center;margin-bottom:4px;}
     .form-box-sub{font-size:12px;color:var(--text3);text-align:center;margin-bottom:16px;}
     .fgroup{margin-bottom:14px;}
@@ -53,7 +53,7 @@
     .fgroup input,.fgroup select{width:100%;padding:12px 16px;background:var(--cream);border:1.5px solid var(--cream3);border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;color:var(--text);outline:none;transition:all 0.25s;-webkit-appearance:none;}
     .fgroup input::placeholder{color:var(--text3);}
     .fgroup select option{background:var(--white);color:var(--text);}
-    .fgroup input:focus,.fgroup select:focus{border-color:var(--teal);background:rgba(15,76,76,0.04);}
+    .fgroup input:focus,.fgroup select:focus{border-color:var(--teal);background:rgba(30,58,95,0.04);}
     .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
     .form-send-btn{width:100%;padding:14px;background:#25D366;color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;border:none;border-radius:12px;cursor:pointer;margin-top:8px;transition:all 0.3s;letter-spacing:0.3px;}
     .form-send-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,211,102,0.3);background:#1fbd5a;}
@@ -87,12 +87,12 @@
 
     /* JOURNEY */
     .journey-sec{background:var(--cream);padding:24px 20px;text-align:center;}
-    .journey-frame{max-width:480px;margin:20px auto 0;border-radius:20px;box-shadow:0 32px 80px rgba(15,76,76,0.15);}
+    .journey-frame{max-width:480px;margin:20px auto 0;border-radius:20px;box-shadow:0 32px 80px rgba(30,58,95,0.15);}
     .journey-frame img{width:100%;display:block;height:auto;border-radius:20px;}
     .journey-ph{width:100%;aspect-ratio:4/3;background:#eef0ff;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:14px;}
 
     /* COACH */
-    .coach-sec{background:#2d27a0;padding:44px 20px;text-align:center;}
+    .coach-sec{background:#162d4a;padding:44px 20px;text-align:center;}
     .coach-name{font-family:'Fraunces',serif;font-size:clamp(2.5rem,8vw,5.5rem);font-weight:900;letter-spacing:-2px;line-height:0.95;color:var(--white);margin-bottom:16px;}
     .coach-name em{font-style:italic;color:var(--coral);}
     .coach-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:16px;}
@@ -102,7 +102,7 @@
     .coach-block cite{display:block;font-size:12px;color:var(--coral2);margin-top:12px;font-style:normal;font-weight:600;letter-spacing:1px;}
 
     /* STATS */
-    .stats-sec{background:var(--coral);padding:36px 20px;}
+    .stats-sec{background:linear-gradient(135deg,#f4622a,#d94e1f);padding:36px 20px;}
     .stats-inner{display:grid;grid-template-columns:repeat(3,1fr);max-width:640px;margin:0 auto;gap:0;}
     .stat-col{text-align:center;padding:20px 10px;border-right:1px solid rgba(255,255,255,0.2);}
     .stat-col:last-child{border-right:none;}
@@ -116,7 +116,7 @@
     .marquee-inner{display:flex;gap:14px;width:max-content;animation:scroll 22s linear infinite;}
     .marquee-inner:hover{animation-play-state:paused;}
     @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    .tcard{width:170px;height:300px;border-radius:16px;overflow:hidden;flex-shrink:0;box-shadow:0 8px 32px rgba(15,76,76,0.10);}
+    .tcard{width:170px;height:300px;border-radius:16px;overflow:hidden;flex-shrink:0;box-shadow:0 8px 32px rgba(30,58,95,0.10);}
     .tcard img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;display:block;}
     .tcard:hover img{transform:scale(1.06);}
 
@@ -126,13 +126,13 @@
     .benefits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:680px;margin:0 auto;}
     .b-card{background:var(--white);border-radius:20px;padding:30px 24px;border:2px solid transparent;transition:all 0.3s;}
     .b-card:hover{border-color:var(--coral);transform:translateY(-4px);box-shadow:0 20px 50px rgba(255,92,58,0.12);}
-    .b-num{font-family:'Fraunces',serif;font-size:3rem;font-weight:900;color:rgba(15,76,76,0.1);line-height:1;margin-bottom:12px;}
+    .b-num{font-family:'Fraunces',serif;font-size:3rem;font-weight:900;color:rgba(30,58,95,0.1);line-height:1;margin-bottom:12px;}
     .b-title{font-family:'Fraunces',serif;font-size:18px;font-weight:700;color:var(--teal);margin-bottom:8px;}
     .b-desc{font-size:13px;color:var(--text2);line-height:1.65;}
     .benefits-cta{text-align:center;margin-top:20px;}
 
     /* KNOW */
-    .know-sec{padding:44px 20px;background:#1e1b5e;text-align:center;}
+    .know-sec{padding:44px 20px;background:#0d1f35;text-align:center;}
     .know-sec .sec-h{color:var(--white);}
     .know-sec .sec-label{color:rgba(255,255,255,0.5);}
     .know-grid{display:flex;flex-direction:column;max-width:440px;margin:18px auto;border:1px solid rgba(255,255,255,0.1);border-radius:18px;overflow:hidden;}
@@ -179,11 +179,11 @@
     .expect-row{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text2);padding:7px 0;border-bottom:1.5px solid var(--cream2);}
     .expect-row:last-child{border-bottom:none;}
     .expect-dot{width:22px;height:22px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:white;flex-shrink:0;}
-    .cta-right-box{background:var(--white);border-radius:20px;padding:26px 20px;box-shadow:0 8px 40px rgba(15,76,76,0.08);}
+    .cta-right-box{background:var(--white);border-radius:20px;padding:26px 20px;box-shadow:0 8px 40px rgba(30,58,95,0.08);}
     .cta-right-h{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:var(--teal);text-align:center;margin-bottom:18px;}
 
     /* FOOTER */
-    footer{padding:48px 24px;background:#1e1b5e;text-align:center;}
+    footer{padding:48px 24px;background:#0d1f35;text-align:center;}
     .footer-tagline{font-size:14px;color:#ffffff;margin-bottom:6px;font-weight:500;}
     
     .footer-sign{font-size:13px;color:#ffffff;margin-bottom:18px;}
@@ -268,7 +268,7 @@
   <p class="sec-p" style="text-align:center;max-width:440px;margin:0 auto">After marriage, taking up a regular job wasn't possible for me — family came first. So I started learning digital skills on my own and exploring online opportunities. Today, I've received stage recognition twice and have guided thousands of learners on their journey.</p>
   <div class="journey-frame sr">
     <!-- CHANGE: replace JOURNEY_IMAGE_URL with imgbb Direct Link -->
-    <img src="https://res.cloudinary.com/ch0ooyne/image/upload/f_auto,q_auto/WhatsApp_Image_2026-08-21_at_16.00.29.jpeg" alt="My Journey" onerror="this.parentElement.innerHTML='<div class=journey-ph>📸 Add your image URL</div>'"/>
+    <img src="https://i.ibb.co/xqsCxVQM/Shagufta-khan-1.png" alt="My Journey" onerror="this.parentElement.innerHTML='<div class=journey-ph>📸 Add your image URL</div>'"/>
   </div>
   <div style="text-align:center;margin-top:24px;" class="sr">
     <button class="btn-coral" style="margin:0 auto;" onclick="openFormModal('Connect Button')">📲 Connect on WhatsApp</button>
@@ -310,6 +310,29 @@
 
 
 
+<!-- ACHIEVEMENTS -->
+<section style="padding:44px 0;background:var(--white);border-bottom:2px solid var(--cream2);overflow:hidden;">
+  <div class="sr" style="text-align:center;padding:0 20px;margin-bottom:24px;">
+    <p class="sec-label">Recognition</p>
+    <h2 class="sec-h">Achievements & <em>Milestones</em></h2>
+    <p class="sec-p" style="max-width:420px;margin:0 auto;">Recognized on stage, trusted by thousands — here's what the journey has looked like.</p>
+  </div>
+  <div style="overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);mask:linear-gradient(90deg,transparent 0%,black 8%,black 92%,transparent 100%);">
+    <div id="achieve-row" style="display:flex;gap:14px;width:max-content;animation:scroll 18s linear infinite;padding:4px 20px;">
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_1_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.innerHTML='<div style=width:100%;height:100%;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:2rem>🏆</div>'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_2_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.innerHTML='<div style=width:100%;height:100%;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:2rem>🏆</div>'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_3_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.innerHTML='<div style=width:100%;height:100%;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:2rem>🏆</div>'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_4_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.innerHTML='<div style=width:100%;height:100%;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:2rem>🏆</div>'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_5_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.innerHTML='<div style=width:100%;height:100%;background:var(--cream2);display:flex;align-items:center;justify-content:center;font-size:2rem>🏆</div>'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_1_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_2_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_3_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_4_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'"/></div>
+      <div style="flex:0 0 160px;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:2px solid var(--cream3);box-shadow:0 4px 20px rgba(30,58,95,.08);"><img src="ACHIEVEMENT_5_URL" alt="Achievement" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'"/></div>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="test-sec">
   <div class="test-header sr" style="text-align:center;padding:0 24px;margin-bottom:20px;">
@@ -333,7 +356,7 @@
     <div class="b-card sr" style="transition-delay:.17s"><div class="b-num">04</div><div class="b-title">Confidence & Growth</div><p class="b-desc">Alongside skills, you'll build the confidence to use them — your growth journey can start today.</p></div>
   </div>
   <div class="benefits-cta sr">
-    <button class="btn-coral" style="margin:0 auto;" onclick="openFormModal('Get Started Button')">📲 Register for the Workshop</button>
+    <button class="btn-coral" style="margin:0 auto;" onclick="openFormModal('Get Started Button')">📲 Get Started Now</button>
   </div>
 </section>
 
@@ -387,7 +410,7 @@
       </div>
       <!-- CHANGE: client number -->
       <div class="save-num"><span>📌 Save My Number: <strong>CLIENT_NUMBER</strong></span></div>
-      <button class="btn-wa" onclick="openFormModal('Message Button')">📲 Register Now</button>
+      <button class="btn-wa" onclick="openFormModal('Message Button')">📲 Message on WhatsApp Now</button>
       <div class="expect">
         <div class="expect-title">Within 24 hours you'll receive:</div>
         <div class="expect-row"><div class="expect-dot">✓</div>Complete workshop details</div>
